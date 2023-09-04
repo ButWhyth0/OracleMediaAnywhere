@@ -14,11 +14,21 @@ const Selection = class {
 }
 
 // A listener for when 'send to caspar' is clicked
-chrome.contextMenus.onClicked.addListener( info => {
-    console.log(info)
-    if(info.srcUrl) var userSelection = new Selection('image', info.srcUrl); // If there is an image, then send data with image type
-    if(info.selectionText) var userSelection = new Selection('text', info.selectionText); // If there is text, then send data with text type
-    handleData(userSelection) // Data is sent to another function for processing/ handling
+chrome.contextMenus.onClicked.addListener( (info, tab) => {
+    if(info.menuItemId === "sendToCaspar") {
+        
+        chrome.tabs.sendMessage(tab.id, { action: "getSelectedHTML" }, (response) => {
+            const selectedHTML = response.selectedHTML;
+            sendDataToServer(selectedHTML);
+        });
+
+
+
+        // console.log(info)
+        // if(info.srcUrl) var userSelection = new Selection('image', info.srcUrl); // If there is an image, then send data with image type
+        // if(info.selectionText) var userSelection = new Selection('text', info.selectionText); // If there is text, then send data with text type
+        // handleData(userSelection) // Data is sent to another function for processing/ handling
+    }
 })
 
 // Handles the data that is being sent
