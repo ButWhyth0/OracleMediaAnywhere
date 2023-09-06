@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Internet to Caspar",
-  "version": "0.2",
+  "version": "0.3",
   "description": "Right click to send image to Caspar",
   "icons": {
     "16": "./assets/casparcg [16x16].png",
@@ -12,12 +12,5 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["contextMenus"],
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "run_at": "document_end"
-    }
-  ]
+  "permissions": ["contextMenus", "activeTab", "scripting"]
 }
