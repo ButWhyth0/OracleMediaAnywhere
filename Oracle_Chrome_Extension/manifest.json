@@ -5,9 +5,8 @@
   "description": "Right click to send image to Caspar",
   "icons": {
     "16": "./assets/casparcg [16x16].png",
-    "32": "./assets/casparcg [32x32].png",
-    "64": "./assets/casparcg [64x64].png",
-    "280": "./assets/casparcg.png"
+    "48": "./assets/casparcg [48x48].png",
+    "128": "./assets/casparcg [128x128].png"
   },
   "browser_action": {
     "default_icon": "./assets/casparcg.png"
