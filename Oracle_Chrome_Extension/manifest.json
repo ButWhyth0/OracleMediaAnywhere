@@ -8,9 +8,6 @@
     "48": "./assets/casparcg [48x48].png",
     "128": "./assets/casparcg [128x128].png"
   },
-  "browser_action": {
-    "default_icon": "./assets/casparcg.png"
-  },
   "background": {
     "service_worker": "background.js"
   },

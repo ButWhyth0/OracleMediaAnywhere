@@ -15,7 +15,7 @@ function escapeHtml(unsafe) {
 
 // A listener for when 'send to caspar' is clicked
 chrome.contextMenus.onClicked.addListener( (info, tab) => {
-    console.log(info)
+    // console.log(info)
     if(info.menuItemId !== "sendToCaspar") return
 
     if(info.srcUrl) {
