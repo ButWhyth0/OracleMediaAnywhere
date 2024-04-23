@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extensions Options</title>
+    <link rel="stylesheet" href="./options.css">
+    <style>
+        .container {
+            background-color: #efefef ;
+            width: 300px;
+            height: 240px;
+        }
+        .options_list {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <ul class="options_list">
+            <li id="CG_IP">
+                <label class="option_tag">IP: </label><input type="text" name="cg_ip" id="cg_ip" placeholder="192.168.70.9">
+            </li>
+            <li id="CG_Port">
+                <label class="option_tag">Port: </label><input type="number" name="cg_port" id="cg_port" placeholder="8080">
+            </li>
+            <li id="CG_Channel">
+                <label class="option_tag">Channel: </label><input type="number" name="cg_channel" id="cg_channel" placeholder="2">
+            </li>
+            <li id="CG_Layer">
+                <label class="option_tag">Layer: </label><input type="number" name="cg_layer" id="cg_layer" placeholder="60">
+            </li>
+        </ul>
+        
+        <div id="status"></div>
+        <button id="save">Save</button>
+
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

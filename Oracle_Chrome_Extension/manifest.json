@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Internet to Oracle",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Right click to send image to Caspar",
   "icons": {
     "16": "./assets/casparcg [16x16].png",
@@ -11,5 +11,10 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["contextMenus", "activeTab", "scripting"]
+  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "./options/options.html"
+
+  }
+
 }
