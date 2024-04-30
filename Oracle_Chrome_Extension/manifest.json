@@ -1,20 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "Internet to Oracle",
-  "version": "0.4",
-  "description": "Right click to send image to Caspar",
+  "name": "Oracle Media Anywhere",
+  "version": "0.6",
+  "description": "Oracle's tool for outputting media from anywhere on the internet.",
   "icons": {
-    "16": "./assets/casparcg [16x16].png",
-    "48": "./assets/casparcg [48x48].png",
-    "128": "./assets/casparcg [128x128].png"
+    "16": "./assets/oracle-[16].png",
+    "32": "./assets/oracle-[32].png",
+    "48": "./assets/oracle-[48].png",
+    "64": "./assets/oracle-[64].png",
+    "128": "./assets/oracle-[128].png",
+    "512": "./assets/oracle-[512].png"
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
-  "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
   "action": {
     "default_popup": "./options/options.html"
-
   }
-
 }

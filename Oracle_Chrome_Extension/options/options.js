@@ -1,13 +1,11 @@
 // Saves options to chrome.storage
 const saveOptions = () => {
-    const channel = document.getElementById("cg_channel").value;
+    const channel = document.getElementById("cg_channel").value = items.cgChannel;
     const layer = document.getElementById("cg_layer").value;
-    const selection = document.getElementById("cg_selection").value;
 
     chrome.storage.sync.set(
-        {cgLayer: layer, cgSelection: selection},
+        {cgChannel: channel, cgLayer: layer},
         () => {
-            console.log('OPTIONS SAVED')
             // Updates status to let user know that the changes have been saved
             const status = document.getElementById("status");
             status.textContent = "Options were saved.";
@@ -21,11 +19,11 @@ const saveOptions = () => {
 // Restores previously saved options
 const restoreOptions = () => {
     chrome.storage.sync.get(
-        {cgLayer: 60, cgSelection: 1},
+        {cgChannel: 2, cgLayer: 60},
         (items) => {
             console.log('OPTIONS RESTORED')
+            document.getElementById("cg_channel").value = items.cgChannel;
             document.getElementById("cg_layer").value = items.cgLayer;
-            document.getElementById("cg_selection").value = items.cgSelection;
         }
     )
 }
