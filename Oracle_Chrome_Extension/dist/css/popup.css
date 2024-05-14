@@ -1,0 +1,233 @@
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* ----------------------------- ANIMATIONS ----------------------------- */
+
+@keyframes popup-extend {
+  to {height: 194px};
+  from {height: 150px};
+}
+
+@keyframes popup-shrink {
+  to {height: 150px};
+  from {height: 194px};
+}
+
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+@keyframes fade-out {
+  from {opacity: 100;}
+  to {opacity: 0;}
+}
+
+
+
+
+
+/* ----------------------------- OVERALL STYLING ----------------------------- */
+:root {
+  --primary: #00abf3;
+  --secondary: #8847fd;
+  --accent: #ff05ae;
+  --positive: #5CC48F;
+  --negative: #FC3F4D;
+  --info: #8FC9DC;
+  --warning: #F7C159;
+  --primary-dark: #2a2627;
+  --dark-page: rgb(22, 24, 23);
+  --dark: #2a2627;
+  --page-contrast: #efefef;
+  --icon_size: 2.5em;
+  --connected: #4caf50;
+  --disconnected: #818181;
+}
+
+body {
+  margin: 0;
+  
+}
+
+.container {
+  background-color: var(--dark-page);
+  color: var(--page-contrast);
+  width: 280px;
+  height: 200px;
+  animation-duration: 0.7s;
+  animation-fill-mode:both;
+}
+
+/* ----------------------------- HEADER STYLING ----------------------------- */
+
+.toolbar {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  background: linear-gradient(0deg, rgb(22, 24, 23) 0%, rgb(42, 38, 39) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 0.25em 0.5em;
+  min-height: 3em;
+}
+
+.toolbar_item {
+  padding: 0 0.5em;
+}
+
+.icon_container {
+  height: var(--icon_size);
+  width: var(--icon_size);
+}
+
+#icon {
+  height: var(--icon_size);
+  width: var(--icon_size);
+  object-fit: contain;
+}
+
+
+.number_container {
+  position: absolute;
+  right: -0.25em;
+  top: -0.5em;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  font-size: 1em;
+  box-sizing: border-box;
+  padding: 0 0 0 6px;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1em;
+  color: white;
+}
+
+.ccg {
+  position: relative;
+}
+
+#ccg1 {
+  color: var(--positive);
+}
+
+#ccg1 div {
+  background-color: var(--disconnected);
+}
+
+#ccg2 {
+  color: var(--disconnected);
+}
+
+#ccg2 div {
+  background-color: var(--disconnected);
+}
+
+#save {
+  font-family: 'Pilat';
+  font-size: 18px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 0.25em;
+  box-sizing: border-box;
+  height: 1.65em;
+  width: 2.5em;
+  margin-left: auto;
+  padding: 0;
+  background-color: var(--primary);
+  color: white;
+}
+
+#save:active {
+  background-color: #008ac5;
+}
+
+/* ----------------------------- MAIN BODY STYLING ----------------------------- */
+.main_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em 1em 1em 1em;
+}
+
+.options_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 1em 2em;
+  background-color: var(--dark);
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.25em black;
+}
+
+.options_list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.options {
+  display: flex;
+  margin: 0.25em 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.option_label {
+  font-family: "Pilat";
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.cg_options {
+  background-color: var(--dark);
+  color: var(--page-contrast);
+  box-sizing: border-box;
+  font-family: "Pilat";
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 0;
+  border: 0;
+  text-align: center;
+  transition-duration: 0.3s;
+  width: 2em;
+  vertical-align: bottom;
+  border-radius: 5px;
+  margin-left: 1em;
+}
+
+.cg_options:hover {
+  background-color: var(--dark-page);
+}
+
+.options_list hr {
+  border-color: #818181;
+  border-bottom-width: 0;
+  border-style: solid;
+  display: none;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+}
+
+#status {
+  display: inline;
+  opacity: 0;
+  position: relative;
+  font-family: "Pilat";
+  font-size: 14px;
+  font-weight: 600;
+  box-sizing: border-box;
+  background-color: #04aa6d;
+  vertical-align: middle;
+  width:fit-content;
+  padding: 0.5em 1em 0.5em 1em;
+  margin-top: 1em;
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em black;
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}

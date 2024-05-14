@@ -1,0 +1,144 @@
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Thin.otf") format("opentype");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Light.otf") format("opentype");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Book.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Demi.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Pilat";
+  src: url("./Pilat/Pilat\ Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Thin.otf") format("opentype");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Light.otf") format("opentype");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Book.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Demi.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Pilat_Extended";
+  src: url("./Pilat/Pilat\ Extended\ Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Thin.otf") format("opentype");
+  font-weight: thin;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Light.otf") format("opentype");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Book.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Demi.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Pilat_Condensed";
+  src: url("./Pilat/Pilat\ Condensed\ Black.otf") format("opentype");
+  font-weight: 900;
+}
